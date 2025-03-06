@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // 设置错误报告
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -29,3 +29,4 @@ function 加载页面($页面) {
 
 // 加载请求的页面
 加载页面($页面);
+

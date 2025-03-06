@@ -1,21 +1,24 @@
 <?php
-// 网站基本信息
-$网站配置 = [
-    '网站名称' => '南国鼎峰',
-    '网站描述' => '南国鼎峰官方网站',
-    '关键词' => '南国鼎峰,官网,企业网站',
-    '版权信息' => '© ' . date('Y') . ' 南国鼎峰 版权所有',
-    '联系电话' => '123-456-7890',
-    '联系邮箱' => 'contact@example.com',
-    '地址' => '某省某市某区某街道123号'
-];
+// 网站基础配置
+define('ROOT_PATH', realpath(__DIR__ . '/../../'));
+$database_config = require ROOT_PATH . '/mysql/mysql配置项.php';
 
-// 全局函数
-function 获取网站配置($键) {
-    global $网站配置;
-    return isset($网站配置[$键]) ? $网站配置[$键] : null;
+function 获取网站配置($key) {
+    $config = [
+        '网站名称' => '科技先锋',
+        '客服电话' => '400-1234-5678',
+        '公司地址' => '北京市海淀区科技大厦A座'
+    ];
+    return $config[$key] ?? '';
 }
 
-// 引入数据库配置
-require_once ROOT_PATH . '/mysql/数据库连接.php';
-
+function 获取导航菜单() {
+    global $database_config;
+    $pdo = new PDO(
+        "mysql:host={$database_config['db_host']};dbname={$database_config['db_name']}",
+        $database_config['db_user'],
+        $database_config['db_pass']
+    );
+    return $pdo->query("SELECT module_name AS name, module_path AS path FROM modules")->fetchAll(PDO::FETCH_ASSOC);
+}
+?>

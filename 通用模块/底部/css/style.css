@@ -1,0 +1,44 @@
+.main-footer {
+    background: #2d3748;
+    color: #cbd5e0;
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #cbd5e0;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.social-icons img {
+    height: 32px;
+    margin-right: 1rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #4a5568;
+    color: #718096;
+}
