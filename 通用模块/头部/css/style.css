@@ -1,0 +1,16 @@
+/* 头部导航栏样式 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-link {
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+.nav-link.active {
+    color: #0d6efd !important;
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+/* 关于我们页面样式 */
+.about-section {
+    padding: 60px 0;
+}
+.about-section h1 {
+    margin-bottom: 40px;
+}
+.team-section {
+    margin-top: 40px;
+}
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}

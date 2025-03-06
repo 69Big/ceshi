@@ -1,0 +1,18 @@
+/* 底部样式 */
+footer {
+    margin-top: 60px;
+    background: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+footer h5 {
+    margin-bottom: 20px;
+    color: #0d6efd;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0d6efd;
+}

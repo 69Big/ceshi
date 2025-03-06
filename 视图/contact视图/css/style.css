@@ -1,0 +1,17 @@
+/* 联系我们页面样式 */
+.contact-section {
+    padding: 60px 0;
+}
+.contact-info {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 5px;
+}
+.contact-form {
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+.contact-form textarea {
+    height: 150px;
+}

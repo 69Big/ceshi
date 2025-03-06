@@ -1,0 +1,16 @@
+/* 404页面样式 */
+.error-page {
+    padding: 100px 0;
+    text-align: center;
+}
+.error-page h1 {
+    font-size: 5rem;
+    color: #dc3545;
+}
+.error-page p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.error-page .btn {
+    margin-top: 30px;
+}
